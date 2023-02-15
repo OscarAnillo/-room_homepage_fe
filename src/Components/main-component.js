@@ -1,8 +1,10 @@
+import "animate.css";
+
 export const MainComponent = () => {
   return (
     <div className="div-container">
       <img src="images/image-about-dark.jpg" alt="" />
-      <div className="main-col2">
+      <div className="main-col2 animate__animated animate__slideInLeft">
         <div>
           <h2>About our furniture</h2>
           <p>

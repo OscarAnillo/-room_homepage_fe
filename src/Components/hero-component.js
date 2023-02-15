@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "animate.css";
 
 const mobileImages = [
   "images/mobile-image-hero-1.jpg",
@@ -38,7 +39,7 @@ export const HeroComponent = () => {
         </div>
       </div>
       <div className="col2">
-        <div className="hero-text">
+        <div className="hero-text animate__animated animate__slideInRight">
           <h1>Discover innovative ways to decorate</h1>
           <p>
             We provide unmatched quality, comfort, and style for property owners
