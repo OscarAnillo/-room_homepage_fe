@@ -1,6 +1,6 @@
 export const NavBarComponent = ({ showMobileMenu, clickMobileMenuHandler }) => {
   return (
-    <div className="div">
+    <div className="div-nav">
       <nav className="nav">
         <img
           src="images/icon-hamburger.svg"
@@ -9,26 +9,34 @@ export const NavBarComponent = ({ showMobileMenu, clickMobileMenuHandler }) => {
           onClick={clickMobileMenuHandler}
         />
         <img src="images/logo.svg" alt="" />
+        <ul className="desktop-ul">
+          <li>home</li>
+          <li>shop</li>
+          <li>about</li>
+          <li>contact</li>
+        </ul>
       </nav>
-      {showMobileMenu ? (
-        <div className="mobile-menu">
-          <div className="mobile-menu-div">
-            <div>
-              <img
-                src="images/icon-close.svg"
-                alt=""
-                onClick={clickMobileMenuHandler}
-              />
-              <ul>
-                <li>home</li>
-                <li>shop</li>
-                <li>about</li>
-                <li>contact</li>
-              </ul>
+      <div id="mobile">
+        {showMobileMenu ? (
+          <div className="mobile-menu">
+            <div className="mobile-menu-div">
+              <div>
+                <img
+                  src="images/icon-close.svg"
+                  alt=""
+                  onClick={clickMobileMenuHandler}
+                />
+                <ul>
+                  <li>home</li>
+                  <li>shop</li>
+                  <li>about</li>
+                  <li>contact</li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-      ) : null}
+        ) : null}
+      </div>
     </div>
   );
 };

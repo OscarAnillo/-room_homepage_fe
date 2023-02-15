@@ -6,6 +6,12 @@ const mobileImages = [
   "images/mobile-image-hero-3.jpg",
 ];
 
+const desktopImages = [
+  "images/desktop-image-hero-1.jpg",
+  "images/desktop-image-hero-2.jpg",
+  "images/desktop-image-hero-3.jpg",
+];
+
 export const HeroComponent = () => {
   const [picPlace, setPicPlace] = useState(0);
 
@@ -20,7 +26,8 @@ export const HeroComponent = () => {
   return (
     <div className="hero">
       <div className="col1">
-        <img src={mobileImages[picPlace]} alt="" />
+        <img src={mobileImages[picPlace]} alt="" className="mobile-img" />
+        <img src={desktopImages[picPlace]} alt="" className="desktop-img" />
         <div className="mobile-btn">
           <button onClick={clickHandlerPrev} disabled={picPlace === 0}>
             <img src="images/icon-angle-left.svg" alt="" />
@@ -30,7 +37,7 @@ export const HeroComponent = () => {
           </button>
         </div>
       </div>
-      <div>
+      <div className="col2">
         <div className="hero-text">
           <h1>Discover innovative ways to decorate</h1>
           <p>

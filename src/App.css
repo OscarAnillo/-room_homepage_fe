@@ -62,6 +62,10 @@ img {
   font-size: 1.1rem;
   font-weight: 700;
 }
+.desktop-ul {
+  display: none;
+  align-items: center;
+}
 /* HeroComponent */
 .hero {
   width: 100%;
@@ -70,8 +74,11 @@ img {
   position: relative;
   overflow: hidden;
 }
-.col1 img {
+.mobile-img {
   width: 100%;
+}
+.desktop-img {
+  display: none;
 }
 .mobile-btn {
   position: absolute;
@@ -136,4 +143,122 @@ img {
   color: hsl(0, 0%, 63%);
   font-size: 1.1rem;
   line-height: 1.5rem;
+}
+
+@media(min-width: 1000px){
+  /* NavComponent */
+  .nav {
+    width: 35%;
+    margin:  0 auto 0 5em;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .ham {
+    display: none;
+  }
+  .desktop-ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .desktop-ul li {
+    margin-right: 1rem;
+    color: #fff;
+    font-size: 1.3rem;
+  }
+  .desktop-ul li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  /* HeroComponent */
+  .hero {
+    height: 700px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .col1 {
+    position: relative;
+    width: 60%;
+  }
+  .mobile-img {
+    display: none;
+  }
+  .desktop-img {
+    display: block;
+    height: 700px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .mobile-btn {
+    position: absolute;
+    top: 87%;
+    right: 0%;
+    z-index: 1;
+  }
+  .mobile-btn button {
+    background-color: #000;
+    border: none;
+    padding: 2.5em 3em;
+    transition: .3s;
+  }
+  .mobile-btn button:hover {
+    background-color: rgb(68, 68, 68);
+    cursor: pointer;
+  }
+  .col2 {
+    width: 40%;
+  }
+  .hero-text {
+    margin: 0em auto;
+    width: 80%;
+    text-align: left;
+  }
+  .hero-text h1 {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    width: 80%;
+  }
+  .hero-text p {
+    font-size: 1.1rem;
+    width: 80%;
+  }
+  .hero-text span {
+    font-size: 1.2rem;
+    letter-spacing: 10px;
+    transition: .3s;
+  }
+  .hero-text span:hover {
+    color: hsl(0, 0%, 63%);
+    cursor: pointer;
+  }
+  .hero-text img {
+    width: 10%;
+  }
+
+  /* MainComponent */
+  .div-container {
+    padding-top: 0em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 276px;
+  }
+  .div-container img {
+    height: 276px;
+    width: 100%; 
+  }
+  .main-col2 {
+    padding: 0em;
+  }
+  .main-col2 div {
+    width: 75%;
+    margin: 0 auto;
+  }
+  .main-col2 h2 {
+    letter-spacing: 5px;
+  }
 }
