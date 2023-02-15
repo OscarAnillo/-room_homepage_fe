@@ -1,8 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .App {
+  font-family: 'League Spartan', sans-serif;
+  min-height: 100vh;
   text-align: center;
+}
+img {
+  max-width: 100%;
+}
+
+/* NavComponent */
+.div {
+  position: relative;
+}
+.nav {
+  padding: 3.5em 0;
+  position: absolute;
+  width: 90%;
+  margin:  0 auto 0 1.5em;
+  z-index: 1;
+}
+.ham {
+  position: absolute;
+  top: 40%;
+  left: 0;
+}
+
+.mobile-menu {
+  background-color: rgba(36, 35, 35, 0.7);
+  position: absolute;
+  top: 0;
+  left:0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  min-height: 100vh;
+  z-index: 2;
+}
+.mobile-menu-div {
+  background-color: #fff;
+  padding: 3.5em 0;
+}
+.mobile-menu-div div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+.mobile-menu-div ul {
+  display: flex;
+}
+.mobile-menu-div ul li {
+  margin-right: 1.5em;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+/* HeroComponent */
+.hero {
+  width: 100%;
+}
+.col1 {
+  position: relative;
+  overflow: hidden;
+}
+.col1 img {
+  width: 100%;
+}
+.mobile-btn {
+  position: absolute;
+  top: 82.5%;
+  right: 0;
+}
+.mobile-btn button {
+  background-color: #000;
+  border: none;
+  padding: 1.5em 2em;
+}
+.hero-text {
+  margin: 3.5em auto 2em auto;
+  width: 90%;
+  text-align: left;
+}
+.hero-text h1 {
+  font-size: 2.7rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  margin-bottom: .35em;
+}
+.hero-text p {
+  color: hsl(0, 0%, 63%);
+  font-size: 1.05rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  margin-bottom: 2em;
+  width: 90%;
+}
+.hero-text span {
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 15px;
+  text-transform: uppercase;
+  margin-right: 1em;
+}
+.hero-text img {
+  width: 15%;
+}
+
+
+/* MainComponent */
+.div-container {
+  padding-top: 3em;
+}
+.main-col2 {
+  padding: 4em 0;
+  text-align: left;
+}
+.main-col2 div {
+  width: 90%;
+  margin: 0 auto;
+}
+.main-col2 h2 {
+  letter-spacing: 3px;
+  font-weight: 700;
+  padding-bottom: 1em;
+  text-transform: uppercase;
+}
+.main-col2 p {
+  color: hsl(0, 0%, 63%);
+  font-size: 1.1rem;
+  line-height: 1.5rem;
 }
