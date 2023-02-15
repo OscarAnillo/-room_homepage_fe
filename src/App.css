@@ -96,8 +96,9 @@ img {
 }
 .hero-text p {
   color: hsl(0, 0%, 63%);
-  font-size: 1.1rem;
-  line-height: 1.75rem;
+  font-size: 1.05rem;
+  font-weight: 500;
+  line-height: 1.5rem;
   margin-bottom: 2em;
   width: 90%;
 }
@@ -110,4 +111,29 @@ img {
 }
 .hero-text img {
   width: 15%;
+}
+
+
+/* MainComponent */
+.div-container {
+  padding-top: 3em;
+}
+.main-col2 {
+  padding: 4em 0;
+  text-align: left;
+}
+.main-col2 div {
+  width: 90%;
+  margin: 0 auto;
+}
+.main-col2 h2 {
+  letter-spacing: 3px;
+  font-weight: 700;
+  padding-bottom: 1em;
+  text-transform: uppercase;
+}
+.main-col2 p {
+  color: hsl(0, 0%, 63%);
+  font-size: 1.1rem;
+  line-height: 1.5rem;
 }

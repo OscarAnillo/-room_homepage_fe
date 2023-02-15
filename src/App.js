@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 
 import { HeroComponent } from "./Components/hero-component";
 import { NavBarComponent } from "./Components/nav-bar";
+import { MainComponent } from "./Components/main-component";
 
 import "./App.css";
 
@@ -27,6 +28,7 @@ function App() {
         clickMobileMenuHandler={clickMobileMenuHandler}
       />
       <HeroComponent />
+      <MainComponent />
     </div>
   );
 }
