@@ -147,6 +147,9 @@ img {
 }
 
 @media(min-width: 1000px){
+  .App {
+    height: 100vh;
+  }
   /* NavComponent */
   .nav {
     width: 35%;
@@ -199,6 +202,7 @@ img {
     top: 87%;
     right: 0%;
     z-index: 1;
+    
   }
   .mobile-btn button {
     background-color: #000;
@@ -249,17 +253,39 @@ img {
     height: 276px;
   }
   .div-container img {
-    height: 276px;
+    height: 300px;
+    width: 25%; 
+  }
+  .main-col2 {
+    padding: 0em;
+  }
+  .main-col2 div {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .main-col2 h2 {
+    letter-spacing: 5px;
+  }
+}
+@media(min-width: 1400px){
+  .nav {
+    width: 25%;
+  }
+  .desktop-ul li {
+    margin-right: 1.1rem;
+  }
+  .div-container {
+    height: 300px;
+  }
+  .div-container img {
     width: 100%; 
   }
   .main-col2 {
     padding: 0em;
   }
   .main-col2 div {
-    width: 75%;
+    padding: 1em 0;
     margin: 0 auto;
-  }
-  .main-col2 h2 {
-    letter-spacing: 5px;
+    width: 75%;
   }
 }

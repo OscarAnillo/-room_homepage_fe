@@ -34,3 +34,7 @@ function App() {
 }
 
 export default App;
+
+/* 
+git clone git@github.com:kamiliano1/room-homepage.git
+*/
