@@ -215,7 +215,15 @@ img {
     cursor: pointer;
   }
   .col2 {
+    display: flex;
+    align-items: center;
+    height: inherit;
     width: 40%;
+    transition: .6s;
+  }
+  .col2:hover {
+    background-color: #000;
+    color: #fff;
   }
   .hero-text {
     margin: 0em auto;
@@ -257,7 +265,7 @@ img {
     width: 25%; 
   }
   .main-col2 {
-    padding: 0em;
+    padding: 0;
   }
   .main-col2 div {
     width: 80%;
@@ -276,12 +284,21 @@ img {
   }
   .div-container {
     height: 300px;
+    
   }
   .div-container img {
     width: 100%; 
   }
   .main-col2 {
     padding: 0em;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    transition: .6s;
+  }
+  .main-col2:hover {
+    background-color: #000;
+    color: #fff;
   }
   .main-col2 div {
     padding: 1em 0;
