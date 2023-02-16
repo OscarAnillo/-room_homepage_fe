@@ -59,9 +59,11 @@ export const HeroComponent = () => {
         <div className="mobile-btn">
           <button onClick={clickHandlerPrev} disabled={picPlace === 0}>
             <img src="images/icon-angle-left.svg" alt="" />
+            {""}
           </button>
           <button onClick={clickHandlerNext} disabled={picPlace === 2}>
             <img src="images/icon-angle-right.svg" alt="" />
+            {""}
           </button>
         </div>
       </div>
